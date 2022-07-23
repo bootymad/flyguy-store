@@ -1,5 +1,5 @@
 import "../styles/images.css";
-// import "../styles/globals.css";
+import "../styles/globals.css";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import Layout from "../layout/Layout";
 import CartProvider from "../store/CartContext";
