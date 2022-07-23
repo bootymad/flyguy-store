@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1,
+		"name": "Moon Dust",
+		"description": "Matte texture powder",
+		"price": 16,
+		"image": "/images/moondust.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Solar Wind",
+		"description": "Sea salt spray",
+		"price": 18,
+		"image": "/images/solarwind.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Star Dew",
+		"description": "Hybrid grooming cream",
+		"price": 20,
+		"image": "/images/stardew.jpg"
+	}
+]

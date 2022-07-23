@@ -1,16 +1,163 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+	font-family: "Good Times";
+	src: url("/fonts/good times rg.otf") format("opentype");
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html,
+body {
+	padding: 0;
+	margin: 0;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	color: #444444;
+	font-family: monospace;
+}
+
+h1,
+h2 {
+	font-family: "Good Times";
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+/* SITE CONTAINER */
+
+.site-container {
+	margin: 1rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 10px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* MAIN CONTAINER */
+
+/* CONFIRMATION MESSAGE */
+
+.confirmation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: auto;
+	font-size: 1.5rem;
+}
+
+/* PRODUCT GRID */
+
+.product-grid ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product-grid-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.product-grid-item img {
+	max-width: 100%;
+	height: auto;
+	width: 20rem;
+}
+
+/* CART */
+
+.cart {
+	position: sticky;
+	top: 0;
+	background: linear-gradient(90deg, #e3ffe780 0%, #d9e7ff80 100%);
+	backdrop-filter: blur(5px);
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+.cart ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.cart-item {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgba(149, 157, 165, 0.2);
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 5px;
+	margin: 0.5rem;
+	padding: 0.5rem;
+}
+
+.cart-item-text {
+	display: flex;
+	gap: 1rem;
+}
+
+.checkoutButton {
+	width: 100%;
+	background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+	border: 1px solid rgba(149, 157, 165, 0.2);
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 5px;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+.checkoutButton:hover {
+	background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 50%);
+}
+
+/* GENERAL BUTTONS */
+
+.cleanButton {
+	background: linear-gradient(90deg, #e3ffe780 0%, #d9e7ff80 100%);
+	border: 1px solid rgba(149, 157, 165, 0.2);
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 5px;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+.cleanButton:hover {
+	background: linear-gradient(90deg, #e3ffe780 0%, #d9e7ff80 50%);
+}
+
+/* HEADER AND NAV */
+
+.site-logo {
+	margin: 0;
+}
+
+.site-slogan {
+	font-style: italic;
+	margin: 0 0 1rem 0; /* top right bottom left */
+}
+
+/* FOOTER */
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(90deg, #e3ffe780 0%, #d9e7ff80 100%);
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 10px;
+	margin-top: auto;
+}
+
+/* CHECKOUT */
+
+.checkout-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
